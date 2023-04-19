@@ -84,7 +84,7 @@ public class VideoGameResources {
 	}
 	@PUT
 	@Path("/developer/{gameId}/{gameDeveloper}")
-	public]] boolean updateGameDeveloper(@PathParam("gameId") String id, @PathParam("gameDeveloper") String developer) {
+	public boolean updateGameDeveloper(@PathParam("gameId") String id, @PathParam("gameDeveloper") String developer) {
 		return VideoGameDao.instance.updateGameDeveloper(Integer.parseInt(id), developer);
 	}
 	@PUT
